@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace BasicCalculatorLab
+namespace BasicCalculator
 {
-    class MainClass
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("*** BASIC CALCULATOR ***");
 

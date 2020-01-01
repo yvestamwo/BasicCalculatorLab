@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCalculatorLab", "BasicCalculatorLab\BasicCalculatorLab.csproj", "{CC2C6EE6-30E2-42D2-8316-D5EB680E508E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCalculator", "BasicCalculator\BasicCalculator.csproj", "{2F4B21EC-5D2A-46D4-B14F-13723C71CF83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +9,9 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CC2C6EE6-30E2-42D2-8316-D5EB680E508E}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{CC2C6EE6-30E2-42D2-8316-D5EB680E508E}.Debug|anycpu.Build.0 = Debug|anycpu
-		{CC2C6EE6-30E2-42D2-8316-D5EB680E508E}.Release|anycpu.ActiveCfg = Release|anycpu
-		{CC2C6EE6-30E2-42D2-8316-D5EB680E508E}.Release|anycpu.Build.0 = Release|anycpu
+		{2F4B21EC-5D2A-46D4-B14F-13723C71CF83}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{2F4B21EC-5D2A-46D4-B14F-13723C71CF83}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{2F4B21EC-5D2A-46D4-B14F-13723C71CF83}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{2F4B21EC-5D2A-46D4-B14F-13723C71CF83}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
