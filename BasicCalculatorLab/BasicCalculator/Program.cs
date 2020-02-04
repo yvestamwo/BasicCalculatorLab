@@ -6,7 +6,30 @@ namespace BasicCalculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("*** BASIC CALCULATOR ***");
+            Console.WriteLine("*** IF STATEMENT***");
+            int temperature;
+            int humidity;
+            string input;
+            
+            Console.WriteLine("enter the curent temperature in fahrenheit");
+            
+            input = Console.ReadLine();
+            temperature = int.Parse(input);
+            Console.WriteLine("enter the relative humidity");
+            input = Console.ReadLine();
+            humidity = int.Parse(input);
+           
+            
+            bool isInt = int.TryParse(input, out temperature);
+            if (isInt)// only do the calculation if the data entered is an integer;
+            {
+             int heatindex = 5 * (temperature + 61 + (temperature - 68) * 12/10 + (humidity * 94/100));
+                humidity = 30;
+                Console.WriteLine("heatindex" +heatindex);
+            }
+          
+          
+/*          Console.WriteLine("*** BASIC CALCULATOR ***");
 
             Console.WriteLine("Enter the first number");
 
@@ -19,6 +42,7 @@ namespace BasicCalculator
             int sum = firstNumber + secondNumber;
 
             Console.WriteLine("The answer is " + sum);
+*/
         }
     }
 }
