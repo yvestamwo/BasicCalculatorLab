@@ -23,8 +23,8 @@ namespace BasicCalculator
             bool isInt = int.TryParse(input, out temperature);
             if (isInt)// only do the calculation if the data entered is an integer;
             {
-             int heatindex = 5 * (temperature + 61 + (temperature - 68) * 12/10 + (humidity * 94/100));
-                humidity = 30;
+             int heatindex = (5/10) * (temperature + 61 + (temperature - 68) * 12/10 + (humidity * 94/100));
+              
                 Console.WriteLine("heatindex" +heatindex);
             }
           
