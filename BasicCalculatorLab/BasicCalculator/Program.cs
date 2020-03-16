@@ -16,15 +16,17 @@ namespace consoleApp1
             {
                 Console.WriteLine("File exists");
                 Console.WriteLine("enter threshold");
-                
 
 
-                string threshold = Console.ReadLine();
+                string input;
+                int threshold;
+                input = Console.ReadLine();
+                threshold = int.Parse(input);
                 
                 int sumTemps = 0;
                 int numAbove = 0;
                 int numBelow = 0;
-                int temcount = 0;
+                int tempcount = 0;
                 using (StreamReader sr = File.OpenText(filename))
                 {
                     string line = sr.ReadLine();
@@ -33,8 +35,9 @@ namespace consoleApp1
                     {
                         temp = int.Parse(line);
                         sumTemps += 1;
-                        bool condition = (temp >= 20);
-                        if (condition)
+                        tempcount += 1;
+                        
+                        if (temp >= threshold)
                         {
                             numAbove += 1;
                         }
@@ -45,7 +48,7 @@ namespace consoleApp1
                         line = sr.ReadLine();
                         Console.WriteLine("Temps above =" + numAbove);
                         Console.WriteLine("temps below =" + numBelow);
-                        int average = sumTemps / temcount;
+                        int average = sumTemps / tempcount;
                         Console.WriteLine("Average temp =" + average);
                         using (StreamWriter sw = new StreamWriter("output.txt"))
                         {
