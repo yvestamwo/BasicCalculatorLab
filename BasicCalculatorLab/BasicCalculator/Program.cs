@@ -1,24 +1,51 @@
 ﻿using System;
 
-namespace BasicCalculator
+
+namespace personalproject
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("*** BASIC CALCULATOR ***");
+            int number1 = 0;
+            double number2 = 0;
+            string input3 = "";
+            Class1 obj = new Class1();
+            bool boo = false;
+            do
+            {
+                Console.WriteLine("enter number1");
+                string input1 = Console.ReadLine();
+                Console.WriteLine("enter number2");
+                string input2 = Console.ReadLine();
+                Console.WriteLine("choose your opperation");
+                input3 = Console.ReadLine();
+                try
+                {
+                    number1 = int.Parse(input1);
+                    number2 = int.Parse(input2);
+                    if (input3.Equals("+") | input3.Equals("*") | input3.Equals("/"))
+                    {
 
-            Console.WriteLine("Enter the first number");
+                    }
+                    else
+                    {
+                        boo = true;
+                        Console.WriteLine("wrong input");
+                    }
+                }
+                catch (Exception e)
+                {
+                    boo = true;
+                    Console.WriteLine(e.Message);
+                    Console.WriteLine("reenter your data");
+                }
+            }
+            while (boo);
+            obj.operation(number1, number2, input3);
+            }
+           
 
-            // int.Parse will take a string data type and convert it to an int data type
-            int firstNumber = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Enter the second number");
-            int secondNumber = int.Parse(Console.ReadLine());
-
-            int sum = firstNumber + secondNumber;
-
-            Console.WriteLine("The answer is " + sum);
         }
     }
 }
